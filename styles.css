@@ -1,0 +1,99 @@
+html
+{
+  height: 100%;
+  min-width: 650px
+}
+
+body
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+  background-color: black;
+  min-height: 100%;
+}
+
+#buttons
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  min-height: fit-content;
+  margin: 2%;
+}
+
+.extra
+{
+  margin: 6%;
+}
+
+#results
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  font-size: 0.5rem;
+}
+
+.card-header
+{
+  font-weight: bold;
+}
+
+.answer
+{
+  width: 40%;
+  margin: 2%;
+}
+
+#failure
+{
+  height: fit-content;
+}
+
+@media only screen and (max-device-width : 700px), (max-width: 767px){
+  #results
+  {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  #buttons
+  {
+    text-align: center;
+  }
+
+  input
+  {
+    width: 70%;
+  }
+
+  .answer
+  {
+    width: 90%;
+  }
+
+  html
+  {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  html
+  {
+    font-size: 30px;
+  }
+
+  input
+  {
+    width: auto;
+  }
+}
